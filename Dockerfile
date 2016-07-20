@@ -20,7 +20,7 @@ COPY docker.list /etc/apt/sources.list.d/docker.list
 
 # Install Docker
 RUN apt-get update && \
-  apt-get install -y docker curl && \
+  apt-get install -y docker.io curl && \
   rm -rf /var/lib/apt/lists/*
 
 # Add Docker-in-Docker
